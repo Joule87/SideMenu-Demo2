@@ -9,21 +9,37 @@
 /* Begin PBXBuildFile section */
 		F4562D0C23A274A10091ADA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4562D0B23A274A10091ADA9 /* AppDelegate.swift */; };
 		F4562D0E23A274A10091ADA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4562D0D23A274A10091ADA9 /* SceneDelegate.swift */; };
-		F4562D1023A274A10091ADA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4562D0F23A274A10091ADA9 /* ViewController.swift */; };
+		F4562D1023A274A10091ADA9 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4562D0F23A274A10091ADA9 /* ContainerViewController.swift */; };
 		F4562D1323A274A10091ADA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4562D1123A274A10091ADA9 /* Main.storyboard */; };
 		F4562D1523A274A20091ADA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4562D1423A274A20091ADA9 /* Assets.xcassets */; };
 		F4562D1823A274A20091ADA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4562D1623A274A20091ADA9 /* LaunchScreen.storyboard */; };
+		F459EEEF23A2A75700B41DB1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459EEEE23A2A75700B41DB1 /* HomeViewController.swift */; };
+		F459EEF223A2ABA900B41DB1 /* HomeViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459EEF123A2ABA900B41DB1 /* HomeViewControllerDelegate.swift */; };
+		F46F446723A277E700266750 /* SideMenuOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46F446623A277E700266750 /* SideMenuOptions.swift */; };
+		F46F446B23A27BD500266750 /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46F446923A27BD500266750 /* SideMenuTableViewCell.swift */; };
+		F46F446C23A27BD500266750 /* SideMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F46F446A23A27BD500266750 /* SideMenuTableViewCell.xib */; };
+		F46F446E23A27EFC00266750 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46F446D23A27EFC00266750 /* SideMenuTableViewController.swift */; };
+		F4C0DA2523A2B9A000164761 /* SideMenuViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0DA2423A2B9A000164761 /* SideMenuViewControllerDelegate.swift */; };
+		F4C0DA2723A2BDE400164761 /* ContainerViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0DA2623A2BDE300164761 /* ContainerViewControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F4562D0823A274A10091ADA9 /* SideMenu Demo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SideMenu Demo2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4562D0B23A274A10091ADA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4562D0D23A274A10091ADA9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F4562D0F23A274A10091ADA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F4562D0F23A274A10091ADA9 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		F4562D1223A274A10091ADA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4562D1423A274A20091ADA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4562D1723A274A20091ADA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4562D1923A274A20091ADA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F459EEEE23A2A75700B41DB1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F459EEF123A2ABA900B41DB1 /* HomeViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerDelegate.swift; sourceTree = "<group>"; };
+		F46F446623A277E700266750 /* SideMenuOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptions.swift; sourceTree = "<group>"; };
+		F46F446923A27BD500266750 /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
+		F46F446A23A27BD500266750 /* SideMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuTableViewCell.xib; sourceTree = "<group>"; };
+		F46F446D23A27EFC00266750 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
+		F4C0DA2423A2B9A000164761 /* SideMenuViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewControllerDelegate.swift; sourceTree = "<group>"; };
+		F4C0DA2623A2BDE300164761 /* ContainerViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,87 @@
 		F4562D0A23A274A10091ADA9 /* SideMenu Demo2 */ = {
 			isa = PBXGroup;
 			children = (
-				F4562D0B23A274A10091ADA9 /* AppDelegate.swift */,
-				F4562D0D23A274A10091ADA9 /* SceneDelegate.swift */,
-				F4562D0F23A274A10091ADA9 /* ViewController.swift */,
-				F4562D1123A274A10091ADA9 /* Main.storyboard */,
-				F4562D1423A274A20091ADA9 /* Assets.xcassets */,
-				F4562D1623A274A20091ADA9 /* LaunchScreen.storyboard */,
-				F4562D1923A274A20091ADA9 /* Info.plist */,
+				F4562D2323A274C80091ADA9 /* Utils */,
+				F4562D2223A274C20091ADA9 /* Resources */,
+				F4562D2123A274BC0091ADA9 /* View */,
+				F4562D2023A274B70091ADA9 /* Controller */,
+				F4562D1F23A274AD0091ADA9 /* Model */,
 			);
 			path = "SideMenu Demo2";
+			sourceTree = "<group>";
+		};
+		F4562D1F23A274AD0091ADA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F46F446623A277E700266750 /* SideMenuOptions.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F4562D2023A274B70091ADA9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F46F446823A27BAF00266750 /* Cell */,
+				F4562D2423A275070091ADA9 /* Main */,
+				F4562D0B23A274A10091ADA9 /* AppDelegate.swift */,
+				F4562D0D23A274A10091ADA9 /* SceneDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F4562D2123A274BC0091ADA9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4562D1123A274A10091ADA9 /* Main.storyboard */,
+				F4562D1623A274A20091ADA9 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4562D2223A274C20091ADA9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F4562D1423A274A20091ADA9 /* Assets.xcassets */,
+				F4562D1923A274A20091ADA9 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F4562D2323A274C80091ADA9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F4562D2423A275070091ADA9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F459EEF023A2AB7800B41DB1 /* Protocols */,
+				F4562D0F23A274A10091ADA9 /* ContainerViewController.swift */,
+				F46F446D23A27EFC00266750 /* SideMenuTableViewController.swift */,
+				F459EEEE23A2A75700B41DB1 /* HomeViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F459EEF023A2AB7800B41DB1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F459EEF123A2ABA900B41DB1 /* HomeViewControllerDelegate.swift */,
+				F4C0DA2423A2B9A000164761 /* SideMenuViewControllerDelegate.swift */,
+				F4C0DA2623A2BDE300164761 /* ContainerViewControllerDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F46F446823A27BAF00266750 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F46F446923A27BD500266750 /* SideMenuTableViewCell.swift */,
+				F46F446A23A27BD500266750 /* SideMenuTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +216,7 @@
 				F4562D1823A274A20091ADA9 /* LaunchScreen.storyboard in Resources */,
 				F4562D1523A274A20091ADA9 /* Assets.xcassets in Resources */,
 				F4562D1323A274A10091ADA9 /* Main.storyboard in Resources */,
+				F46F446C23A27BD500266750 /* SideMenuTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +227,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4562D1023A274A10091ADA9 /* ViewController.swift in Sources */,
+				F46F446B23A27BD500266750 /* SideMenuTableViewCell.swift in Sources */,
+				F46F446E23A27EFC00266750 /* SideMenuTableViewController.swift in Sources */,
+				F4562D1023A274A10091ADA9 /* ContainerViewController.swift in Sources */,
+				F4C0DA2523A2B9A000164761 /* SideMenuViewControllerDelegate.swift in Sources */,
 				F4562D0C23A274A10091ADA9 /* AppDelegate.swift in Sources */,
+				F4C0DA2723A2BDE400164761 /* ContainerViewControllerDelegate.swift in Sources */,
+				F459EEF223A2ABA900B41DB1 /* HomeViewControllerDelegate.swift in Sources */,
+				F46F446723A277E700266750 /* SideMenuOptions.swift in Sources */,
+				F459EEEF23A2A75700B41DB1 /* HomeViewController.swift in Sources */,
 				F4562D0E23A274A10091ADA9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +312,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +366,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -286,7 +382,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ACA42AA29E;
-				INFOPLIST_FILE = "SideMenu Demo2/Info.plist";
+				INFOPLIST_FILE = "SideMenu Demo2/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +390,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jcollado.SideMenu-Demo2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,7 +400,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ACA42AA29E;
-				INFOPLIST_FILE = "SideMenu Demo2/Info.plist";
+				INFOPLIST_FILE = "SideMenu Demo2/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +408,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jcollado.SideMenu-Demo2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
