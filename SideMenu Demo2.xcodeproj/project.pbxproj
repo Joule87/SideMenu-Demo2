@@ -23,6 +23,10 @@
 		F493095E23A3DD2900FD6252 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F493095D23A3DD2900FD6252 /* ChatViewController.swift */; };
 		F493096023A3DD3500FD6252 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F493095F23A3DD3500FD6252 /* ChartViewController.swift */; };
 		F493096523A3FCBF00FD6252 /* UIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F493096423A3FCBF00FD6252 /* UIManager.swift */; };
+		F493096723A3FFAD00FD6252 /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F493096623A3FFAD00FD6252 /* Favorites.storyboard */; };
+		F493096923A3FFBB00FD6252 /* Chart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F493096823A3FFBB00FD6252 /* Chart.storyboard */; };
+		F493096B23A3FFC800FD6252 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F493096A23A3FFC800FD6252 /* Chat.storyboard */; };
+		F493096D23A3FFD700FD6252 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F493096C23A3FFD700FD6252 /* Home.storyboard */; };
 		F4C0DA2523A2B9A000164761 /* SideMenuViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0DA2423A2B9A000164761 /* SideMenuViewControllerDelegate.swift */; };
 		F4C0DA2723A2BDE400164761 /* ContainerViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0DA2623A2BDE300164761 /* ContainerViewControllerDelegate.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +50,10 @@
 		F493095D23A3DD2900FD6252 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		F493095F23A3DD3500FD6252 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		F493096423A3FCBF00FD6252 /* UIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIManager.swift; sourceTree = "<group>"; };
+		F493096623A3FFAD00FD6252 /* Favorites.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorites.storyboard; sourceTree = "<group>"; };
+		F493096823A3FFBB00FD6252 /* Chart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chart.storyboard; sourceTree = "<group>"; };
+		F493096A23A3FFC800FD6252 /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
+		F493096C23A3FFD700FD6252 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		F4C0DA2423A2B9A000164761 /* SideMenuViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewControllerDelegate.swift; sourceTree = "<group>"; };
 		F4C0DA2623A2BDE300164761 /* ContainerViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,6 +178,10 @@
 			children = (
 				F4562D1123A274A10091ADA9 /* Main.storyboard */,
 				F4562D1623A274A20091ADA9 /* LaunchScreen.storyboard */,
+				F493096623A3FFAD00FD6252 /* Favorites.storyboard */,
+				F493096A23A3FFC800FD6252 /* Chat.storyboard */,
+				F493096823A3FFBB00FD6252 /* Chart.storyboard */,
+				F493096C23A3FFD700FD6252 /* Home.storyboard */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -241,10 +253,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F493096B23A3FFC800FD6252 /* Chat.storyboard in Resources */,
 				F4562D1823A274A20091ADA9 /* LaunchScreen.storyboard in Resources */,
 				F4562D1523A274A20091ADA9 /* Assets.xcassets in Resources */,
 				F4562D1323A274A10091ADA9 /* Main.storyboard in Resources */,
 				F46F446C23A27BD500266750 /* SideMenuTableViewCell.xib in Resources */,
+				F493096723A3FFAD00FD6252 /* Favorites.storyboard in Resources */,
+				F493096923A3FFBB00FD6252 /* Chart.storyboard in Resources */,
+				F493096D23A3FFD700FD6252 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
