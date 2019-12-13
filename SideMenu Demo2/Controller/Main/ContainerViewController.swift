@@ -20,15 +20,6 @@ class ContainerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUIElements()
-    }
-    
-    func setupUIElements() {
-        guard let nav = centralContainerView.next as? UINavigationController else { return }
-        if let vc = nav.viewControllers.first as? HomeViewController {
-            vc.delegate = self
-        }
-        
     }
     
     func toggleSideMenu() {
@@ -45,11 +36,13 @@ class ContainerViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "NavigationSegue",
-            let navigationController = segue.destination as? UINavigationController,
-            let homeViewController = navigationController.viewControllers.first as? HomeViewController{
-            homeViewController.delegate = self
-            delegate = homeViewController
+        if segue.identifier == "TabBarSegue",let tabBarViewController = segue.destination as? UITabBarController{
+            tabBarViewController.delegate = self
+            tabBarViewController.viewControllers?.forEach { vc in
+                let navigationController = vc as? UINavigationController
+                let topViewController = navigationController?.topViewController as? ContainerViewControllerDelegate
+                topViewController?.leftDrawerDelegate = self
+            }
         }
         if segue.identifier == "SideMenuSegue",
             let sideMenuViewController = segue.destination as? SideMenuTableViewController{
@@ -59,7 +52,7 @@ class ContainerViewController: UIViewController {
     
 }
 
-extension ContainerViewController: HomeViewControllerDelegate {
+extension ContainerViewController: LeftDrawerViewControllerDelegate {
     func didTapHamburguerMenuButton() {
         self.toggleSideMenu()
     }
@@ -72,4 +65,11 @@ extension ContainerViewController: SideMenuViewControllerDelegate {
         toggleSideMenu()
     }
     
+}
+
+extension ContainerViewController: UITabBarControllerDelegate {
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        guard let navigationController = viewController as? UINavigationController, let vc = navigationController.topViewController as? ContainerViewControllerDelegate else { return }
+        delegate = vc
+    }
 }

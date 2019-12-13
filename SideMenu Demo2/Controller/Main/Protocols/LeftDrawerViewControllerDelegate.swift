@@ -1,5 +1,5 @@
 //
-//  HomeViewControllerDelegate.swift
+//  LeftDrawerViewControllerDelegate.swift
 //  SideMenu Demo2
 //
 //  Created by Julio Collado on 12/12/19.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol HomeViewControllerDelegate {
+protocol LeftDrawerViewControllerDelegate {
     func didTapHamburguerMenuButton()
 }
