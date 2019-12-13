@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        appInterfaceConfigurations()
         window?.makeKeyAndVisible()
         return true
     }
@@ -35,5 +36,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+
+extension AppDelegate {
+    func appInterfaceConfigurations() {
+        UIManager.setupTabBar()
+    }
 }
 

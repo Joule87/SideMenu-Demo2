@@ -35,6 +35,7 @@ class ContainerViewController: UIViewController {
         }, completion: nil)
     }
     
+    ///Set delegates when initializes the navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "TabBarSegue",let tabBarViewController = segue.destination as? UITabBarController{
             tabBarViewController.delegate = self
@@ -42,6 +43,9 @@ class ContainerViewController: UIViewController {
                 let navigationController = vc as? UINavigationController
                 let topViewController = navigationController?.topViewController as? ContainerViewControllerDelegate
                 topViewController?.leftDrawerDelegate = self
+                if let home = topViewController as? HomeViewController {
+                    delegate = home
+                }
             }
         }
         if segue.identifier == "SideMenuSegue",
@@ -69,7 +73,10 @@ extension ContainerViewController: SideMenuViewControllerDelegate {
 
 extension ContainerViewController: UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-        guard let navigationController = viewController as? UINavigationController, let vc = navigationController.topViewController as? ContainerViewControllerDelegate else { return }
+        guard let navigationController = viewController as? UINavigationController,
+            let vc = navigationController.topViewController as? ContainerViewControllerDelegate else { return }
+        ///set the delegate for the hamburguer menu in the View Controller for the Tab Bar Item was tapped
         delegate = vc
     }
+    
 }

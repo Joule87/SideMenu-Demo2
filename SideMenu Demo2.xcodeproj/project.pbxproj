@@ -22,6 +22,7 @@
 		F493095C23A3DD1800FD6252 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F493095B23A3DD1800FD6252 /* FavoritesViewController.swift */; };
 		F493095E23A3DD2900FD6252 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F493095D23A3DD2900FD6252 /* ChatViewController.swift */; };
 		F493096023A3DD3500FD6252 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F493095F23A3DD3500FD6252 /* ChartViewController.swift */; };
+		F493096523A3FCBF00FD6252 /* UIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F493096423A3FCBF00FD6252 /* UIManager.swift */; };
 		F4C0DA2523A2B9A000164761 /* SideMenuViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0DA2423A2B9A000164761 /* SideMenuViewControllerDelegate.swift */; };
 		F4C0DA2723A2BDE400164761 /* ContainerViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0DA2623A2BDE300164761 /* ContainerViewControllerDelegate.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +45,7 @@
 		F493095B23A3DD1800FD6252 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		F493095D23A3DD2900FD6252 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		F493095F23A3DD3500FD6252 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		F493096423A3FCBF00FD6252 /* UIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIManager.swift; sourceTree = "<group>"; };
 		F4C0DA2423A2B9A000164761 /* SideMenuViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewControllerDelegate.swift; sourceTree = "<group>"; };
 		F4C0DA2623A2BDE300164761 /* ContainerViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,7 +80,7 @@
 		F4562D0A23A274A10091ADA9 /* SideMenu Demo2 */ = {
 			isa = PBXGroup;
 			children = (
-				F4562D2323A274C80091ADA9 /* Utils */,
+				F493096323A3FC7E00FD6252 /* Common */,
 				F4562D2223A274C20091ADA9 /* Resources */,
 				F4562D2123A274BC0091ADA9 /* View */,
 				F4562D2023A274B70091ADA9 /* Controller */,
@@ -172,6 +174,15 @@
 			path = StoryBoard;
 			sourceTree = "<group>";
 		};
+		F493096323A3FC7E00FD6252 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F4562D2323A274C80091ADA9 /* Utils */,
+				F493096423A3FCBF00FD6252 /* UIManager.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -251,6 +262,7 @@
 				F493096023A3DD3500FD6252 /* ChartViewController.swift in Sources */,
 				F4562D0C23A274A10091ADA9 /* AppDelegate.swift in Sources */,
 				F4C0DA2723A2BDE400164761 /* ContainerViewControllerDelegate.swift in Sources */,
+				F493096523A3FCBF00FD6252 /* UIManager.swift in Sources */,
 				F493095C23A3DD1800FD6252 /* FavoritesViewController.swift in Sources */,
 				F459EEF223A2ABA900B41DB1 /* LeftDrawerViewControllerDelegate.swift in Sources */,
 				F46F446723A277E700266750 /* SideMenuOptions.swift in Sources */,
