@@ -16,10 +16,37 @@ class ContainerViewController: UIViewController {
     
     var isSideMenuHidden = false
     
+    ///View to cover central container and disable it when side menu is being shown
+    lazy var shadowCentralContainerView: UIView = {
+        let shadowView =  UIView()
+        let shadowTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleShadowCentralContainerTap))
+        shadowView.addGestureRecognizer(shadowTapGestureRecognizer)
+        shadowView.alpha = 0.3
+        shadowView.backgroundColor = .black
+        return shadowView
+    }()
+    
     weak var delegate: ContainerViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    @objc func handleShadowCentralContainerTap() {
+        toggleSideMenu()
+    }
+    
+    func setShadowView() {
+        if isSideMenuHidden {
+            shadowCentralContainerView.translatesAutoresizingMaskIntoConstraints = false
+            centralContainerView.addSubview(shadowCentralContainerView)
+            [shadowCentralContainerView.topAnchor.constraint(equalTo: centralContainerView.topAnchor),
+             shadowCentralContainerView.leftAnchor.constraint(equalTo: centralContainerView.leftAnchor),
+             shadowCentralContainerView.rightAnchor.constraint(equalTo: centralContainerView.rightAnchor),
+             shadowCentralContainerView.bottomAnchor.constraint(equalTo: centralContainerView.bottomAnchor)].forEach{ $0.isActive = true}
+        } else {
+            shadowCentralContainerView.removeFromSuperview()
+        }
     }
     
     func toggleSideMenu() {
@@ -33,6 +60,7 @@ class ContainerViewController: UIViewController {
         UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: dampingValue, initialSpringVelocity: 0, options: .curveEaseInOut, animations: {
             self.view.layoutIfNeeded()
         }, completion: nil)
+        setShadowView()
     }
     
     ///Set delegates when initializes the navigation
