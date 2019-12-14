@@ -8,10 +8,8 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: TabBarBaseViewController {
     
-    var delegate: HomeViewControllerDelegate?
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,14 +17,7 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func didTapSideMenu(_ sender: UIBarButtonItem) {
-        delegate?.didTapHamburguerMenuButton()
+        leftDrawerDelegate?.didTapHamburguerMenuButton()
     }
-    
-}
-extension HomeViewController: ContainerViewControllerDelegate {
-    func setNavigationFor(_ sideMenuOption: SideMenuOptions) {
-        print(sideMenuOption.description ?? "")
-    }
-    
     
 }

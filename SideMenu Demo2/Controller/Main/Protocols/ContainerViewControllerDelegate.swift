@@ -9,5 +9,14 @@
 import Foundation
 
 protocol ContainerViewControllerDelegate: AnyObject {
+    
+    var leftDrawerDelegate: LeftDrawerViewControllerDelegate? { get set }
+    
     func setNavigationFor(_ sideMenuOption: SideMenuOptions)
+}
+
+extension ContainerViewControllerDelegate {
+    var leftDrawerDelegateleftDrawerDelegate: LeftDrawerViewControllerDelegate? {
+       return nil
+    }
 }

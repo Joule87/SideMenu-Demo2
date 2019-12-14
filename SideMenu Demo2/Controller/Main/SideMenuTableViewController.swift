@@ -18,13 +18,14 @@ class SideMenuTableViewController: UITableViewController {
     }
     
     func setupUIElements() {
+        tableView.separatorStyle = .none
         tableView.register(UINib(nibName: SideMenuTableViewCell.reuserIdentifier, bundle: nil), forCellReuseIdentifier: SideMenuTableViewCell.reuserIdentifier)
     }
     
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
+        return 50
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
