@@ -8,9 +8,7 @@
 
 import UIKit
 
-class FavoritesViewController: UIViewController {
-
-    var leftDrawerDelegate: LeftDrawerViewControllerDelegate?
+class FavoritesViewController: TabBarBaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,10 +21,4 @@ class FavoritesViewController: UIViewController {
         leftDrawerDelegate?.didTapHamburguerMenuButton()
     }
     
-}
-
-extension FavoritesViewController: ContainerViewControllerDelegate {
-    func setNavigationFor(_ sideMenuOption: SideMenuOptions) {
-        print(sideMenuOption.description ?? "")
-    }
 }

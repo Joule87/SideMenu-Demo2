@@ -8,9 +8,7 @@
 
 import UIKit
 
-class ChartViewController: UIViewController {
-    
-    var leftDrawerDelegate: LeftDrawerViewControllerDelegate?
+class ChartViewController: TabBarBaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,8 +21,4 @@ class ChartViewController: UIViewController {
     }
 }
 
-extension ChartViewController: ContainerViewControllerDelegate {
-    func setNavigationFor(_ sideMenuOption: SideMenuOptions) {
-        print(sideMenuOption.description ?? "")
-    }
-}
+

@@ -8,9 +8,7 @@
 
 import UIKit
 
-class ChatViewController: UIViewController {
-    
-    var leftDrawerDelegate: LeftDrawerViewControllerDelegate?
+class ChatViewController: TabBarBaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,11 +18,5 @@ class ChatViewController: UIViewController {
 
     @IBAction func didTapSideMenu(_ sender: UIBarButtonItem) {
         leftDrawerDelegate?.didTapHamburguerMenuButton()
-    }
-}
-
-extension ChatViewController: ContainerViewControllerDelegate {
-    func setNavigationFor(_ sideMenuOption: SideMenuOptions) {
-        print(sideMenuOption.description ?? "")
     }
 }

@@ -9,12 +9,10 @@
 import UIKit
 
 enum SideMenuOptions: Int, CaseIterable {
-    case Home, Profile, Notifications, Settings, Gallery, Inbox, OnlineHelp, Logout
+    case Profile, Notifications, Settings, Gallery, Inbox, OnlineHelp, Logout
     
     var description: String {
         switch self {
-        case .Home:
-            return "Home"
         case .Profile:
             return "Profile"
         case .Notifications:
@@ -34,8 +32,6 @@ enum SideMenuOptions: Int, CaseIterable {
     
     var image: UIImage {
         switch self {
-        case .Home:
-            return #imageLiteral(resourceName: "home")
         case .Profile:
             return #imageLiteral(resourceName: "profile")
         case .Notifications:

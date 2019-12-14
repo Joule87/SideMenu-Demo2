@@ -15,7 +15,27 @@
                     <view key="view" contentMode="scaleToFill" id="ocp-3E-QZ6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ykc-ZG-c8N">
+                                <rect key="frame" x="20" y="706" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="G36-Ts-SyR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                <state key="normal" title="Next Home">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dp3-S8-kbu" kind="show" id="UZr-dh-YEc"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ots-V3-fBZ" firstAttribute="trailing" secondItem="Ykc-ZG-c8N" secondAttribute="trailing" constant="20" id="3Lm-Gk-koY"/>
+                            <constraint firstItem="Ykc-ZG-c8N" firstAttribute="leading" secondItem="Ots-V3-fBZ" secondAttribute="leading" constant="20" id="5Nz-1T-iSR"/>
+                            <constraint firstItem="Ots-V3-fBZ" firstAttribute="bottom" secondItem="Ykc-ZG-c8N" secondAttribute="bottom" constant="47" id="Dmb-Mu-Abe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Ots-V3-fBZ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="home" id="jUe-AJ-pQp"/>
@@ -32,6 +52,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aW9-sb-iI8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1121.7391304347827" y="68.973214285714278"/>
+        </scene>
+        <!--Home 2-->
+        <scene sceneID="XUE-vY-WRr">
+            <objects>
+                <viewController id="dp3-S8-kbu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u2L-Wo-T8E">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="A5B-a5-JX0"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home 2" id="igz-8Z-9aw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DyZ-pW-5Jo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2267" y="69"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SM6-dh-GV2">
